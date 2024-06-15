@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(223, 217, 217);
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid blue;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            color: blue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: rgb(151, 151, 151);
+        }
+
+        .active {
+            background-color: rgb(153, 153, 153);
+        }
+    </style>
+</head>
+
+<body>
+    <h3> Horizontal navigation bar</h3>
+    <div style="border: 1px solid; padding:10px 0px 10px 5px;">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#java">Java</a></li>
+            <li><a href="#css">Css</a></li>
+            <li><a href="#html">Html</a></li>
+            <li><a href="#Bootstrap">Bootstrap</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
